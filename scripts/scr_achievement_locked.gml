@@ -1,0 +1,14 @@
+draw_set_font(fnt_ach2);
+draw_set_color(c_white);
+if (mposx == 0 && mposy == 0) draw_text(desc1_x, desc2_y, "This is a bug.");
+if (mposx == 1 && mposy == 0) draw_text(desc1_x, desc2_y, "Reach a 10x combo");
+if (mposx == 2 && mposy == 0) draw_text(desc1_x, desc2_y, "Reach a 25x combo");
+if (mposx == 0 && mposy == 1) draw_text(desc1_x, desc2_y, "Reach a 100x combo");
+if (mposx == 1 && mposy == 1) draw_text(desc1_x, desc2_y, "Don't Score");
+if (mposx == 2 && mposy == 1) draw_text(desc1_x, desc2_y, "Reload 3 times in a row");
+if (mposx == 0 && mposy == 2) draw_text(desc1_x, desc2_y, "Get three kills with a#single revolver bullet");
+if (mposx == 1 && mposy == 2) draw_text(desc1_x, desc2_y, "Dodge a near-miss");
+if (mposx == 2 && mposy == 2) draw_text(desc1_x, desc2_y, "Airshot an enemy with#the boomzooka");
+if (mposx == 0 && mposy == 3) draw_text(desc1_x, desc2_y, "???");
+if (mposx == 1 && mposy == 3) draw_text(desc1_x, desc2_y, "???");
+if (mposx == 2 && mposy == 3) draw_text(desc1_x, desc2_y, "???");

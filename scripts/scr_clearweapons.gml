@@ -1,0 +1,10 @@
+with (obj_pistol) instance_destroy();
+with (obj_zooka) instance_destroy();
+with (obj_shotgun) instance_destroy();
+with (obj_smg) instance_destroy();
+with (obj_revolver) instance_destroy();
+with (obj_spingun) instance_destroy();
+with (obj_landmines) instance_destroy();
+with (obj_launcher) instance_destroy();
+with (obj_rivetgun) instance_destroy();
+with (obj_reload) instance_destroy();
