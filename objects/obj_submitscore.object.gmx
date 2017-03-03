@@ -32,6 +32,7 @@ global.text_entry = 0;
 show_highscores = 0;
 get_highscores = 0;
 loading = 0;
+submitted = 0;
 txt_input = "";
 for(i = 0;i &lt; 6; i++) gmsb_topscores[i] = 0;
 for(i = 0;i &lt; 6; i++) gmsb_topnames[i] = 0;
@@ -67,7 +68,7 @@ yspacing = view_yview + view_hview/2;
 scr_getinputs();
 
 //
-if (global.text_entry = 0 &amp;&amp; key_enter &amp;&amp; global.easy == 0)
+if (global.text_entry = 0 &amp;&amp; key_enter &amp;&amp; global.easy == 0 &amp;&amp; submitted = 0)
 {
     global.text_entry = 1;
     with (obj_gameover) instance_destroy();

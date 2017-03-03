@@ -114,6 +114,15 @@ draw_set_font(fnt_normal);
 
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 10, "R to restart");
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 30, "ESC to exit");
+
+//Draw top combo
+draw_set_color(c_white);
+draw_set_halign(fa_right);
+draw_set_valign(fa_middle);
+draw_text(view_xview + 1000, view_yview + 480, "Top combo:");
+draw_set_font(fnt_combo);
+draw_text(view_xview + 1000, view_yview + 530, string(obj_combo.topcombo));
+
 /*
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 55, "Enter to upload score");
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 210, string(gmsb_status));

@@ -61,6 +61,9 @@ if keyboard_check_pressed(vk_anykey)
         //Clear txt_input
         txt_input = "";
         
+        //Don't allow resubmit
+        submitted = 1;
+        
         //Recreate gameover
         instance_create(0, 0, obj_gameover);
     }

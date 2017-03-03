@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.combo = 0;
 timer = -1;
+topcombo = 0;
 </string>
           </argument>
         </arguments>
@@ -130,12 +131,14 @@ if (timer == 0) || (timer == -0.5)
 {
     if (global.easy == 0)
     {
+        if (global.combo &gt; topcombo) topcombo = global.combo;
         global.score += power(global.combo, 2);
         global.combo = 0;
     }
     
     if (global.easy == 1)
     {
+        if (global.combo &gt; topcombo) topcombo = global.combo;
         global.score += round(power(global.combo, 1.5));
         global.combo = 0;
     }
@@ -174,7 +177,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_right);
 draw_set_valign(fa_middle);
 
-if (global.combo &gt; 0)
+if (global.combo &gt; 0 &amp;&amp; instance_exists(obj_player))
 {
 draw_text(view_xview + 1000, view_yview + 530, "x" + string(global.combo));
 draw_line_width(bar_x, bar_y, bar_x - timer*0.4555, bar_y, bar_thickness);
