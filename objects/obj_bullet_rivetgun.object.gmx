@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize variables
-alarm[0] = 42;
+alarm[0] = 36;
 i = 0;
 vsp = 0;
 grav = 0.4;

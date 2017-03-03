@@ -173,8 +173,8 @@ else if (instance_exists(obj_landmines))
 {
     draw_set_color(color);
     //Initialize start of array
-    arcx[0] = obj_landmines.x;
-    arcy[0] = obj_landmines.y;
+    arcx[0] = obj_landmines.x + lengthdir_x(-10, obj_landmines.direction);
+    arcy[0] = obj_landmines.y + lengthdir_y(-5, obj_landmines.direction);
     //Initialize starting hsp and vsp
     hsp = lengthdir_x(10 + abs(obj_player.hsp), obj_landmines.direction);
     vsp = lengthdir_y(8, obj_landmines.direction);
@@ -208,8 +208,8 @@ else if (instance_exists(obj_launcher))
 {
     draw_set_color(color);
     //Initialize start of array
-    arcx[0] = obj_launcher.x;
-    arcy[0] = obj_launcher.y;
+    arcx[0] = obj_launcher.x + lengthdir_x(20, obj_launcher.direction);
+    arcy[0] = obj_launcher.y + lengthdir_y(20, obj_launcher.direction);
     //Initialize starting hsp and vsp
     hsp = lengthdir_x(20 + abs(obj_player.hsp), obj_launcher.direction);
     vsp = lengthdir_y(16, obj_launcher.direction);
