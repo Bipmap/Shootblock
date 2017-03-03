@@ -1,0 +1,4 @@
+[Achievements]
+combo10 = 0
+combo50 = 0
+combo100 = 0

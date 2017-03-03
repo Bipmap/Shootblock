@@ -1,0 +1,4 @@
+Reset() Failed: 8876086C
+Change SWAP+Multisample type effect, try Reset() again
+CreateTexture failed - 8876086c
+Compile finished: 1:16:12 PM

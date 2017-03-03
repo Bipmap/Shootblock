@@ -1,0 +1,4 @@
+[Achievements]
+ach1 = 0
+ach2 = 0
+ach3 = 0
