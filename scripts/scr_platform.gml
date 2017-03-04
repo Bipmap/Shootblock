@@ -9,9 +9,19 @@ if (hsp < 0 && move > 0) hsp = 0;
 if (move == 0) hsp *= 0.8;
 if (vsp < 10) vsp += grav * global.smod;
 
-if(place_meeting(x, y + 1, obj_platform))
+//slide--;
+//slide = max(0, slide);
+
+if (place_meeting(x, y + 1, obj_platform))
 {
-    vsp = key_jump * -jumpspeed;
+    vsp = 0;
+    jumpable = 1;
+}
+
+if(jumpable && key_jump)
+{
+    jumpable = 0;
+    vsp = -jumpspeed;
 }
 else hsp *= 0.89;
 /*
