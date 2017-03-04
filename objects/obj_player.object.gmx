@@ -36,6 +36,9 @@ recoil_y = 0;
 global.smod = 1;
 state = p_states.normal;
 
+jumpable = 0;
+//slide = 0;
+
 //Hat stuff
 image_speed = 0;
 image_index = 0;

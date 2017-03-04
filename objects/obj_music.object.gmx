@@ -162,7 +162,13 @@ else if (global.muted == 1)
         case rm_menu: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
         break;
         
+        case rm_difficulty: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
+        break;
+        
         case rm_levelselect: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
+        break;
+        
+        case rm_highscores: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
         break;
         
         case rm_extras: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
