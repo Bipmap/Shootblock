@@ -103,7 +103,7 @@ switch (mpos)
     case 0:
     {
         scr_difficulty_text();
-        menu[0] = "&gt;Normal";
+        menu[0] = "&gt;Advanced";
         for (m = 0; m &lt; array_length_1d(menu); m++)
         {
             draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
@@ -114,7 +114,7 @@ switch (mpos)
     case 1:
     {
         scr_difficulty_text();
-        menu[1] = "&gt;Easy";
+        menu[1] = "&gt;Beginner";
         for (m = 0; m &lt; array_length_1d(menu); m++)
         {
             draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));

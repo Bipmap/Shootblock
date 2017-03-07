@@ -54,13 +54,13 @@ if (!instance_exists(obj_box_weapon))
 {
     switch (room)
     {
-        case rm_level1: instance_create(choose(896, 1456, 1760), random_range(544, 432), obj_box_weapon);
+        case rm_level1: instance_create(choose(896, 1456, 1760), random_range(444, 332), obj_box_weapon);
         break;
         
-        case rm_level2: instance_create(choose(416, 896, 1056, 1360, 1504, 1984), random_range(512, 432), obj_box_weapon);
+        case rm_level2: instance_create(choose(416, 896, 1056, 1360, 1504, 1984), random_range(412, 332), obj_box_weapon);
         break;
         
-        case rm_level3: instance_create(choose(608, 944, 1408, 1600, 1856), random_range(384, 320), obj_box_weapon);
+        case rm_level3: instance_create(choose(608, 944, 1408, 1600, 1856), random_range(256, 176), obj_box_weapon);
         break;
     }
 }

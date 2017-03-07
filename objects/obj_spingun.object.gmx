@@ -56,7 +56,6 @@ instance_create(x, y, obj_spingun_chamber);
           <argument>
             <kind>1</kind>
             <string>with obj_spingun_chamber instance_destroy();
-scr_achievement_spray();
 </string>
           </argument>
         </arguments>
@@ -154,7 +153,11 @@ delay = min(delay, 10);
 accuracy = 40/delay;
 
 //Delete empty gun
-if (ammocount == 0) scr_pistol_initialize();
+if (ammocount == 0)
+{
+    scr_pistol_initialize();
+    scr_achievement_spray();
+}
 
 //Release for achievement
 if (mouse_left_r) full_held = 0;

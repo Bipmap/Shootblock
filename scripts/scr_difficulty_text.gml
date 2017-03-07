@@ -1,3 +1,3 @@
-menu[0] = "Normal";
-menu[1] = "Easy";
+menu[0] = "Advanced";
+menu[1] = "Beginner";
 menu[2] = "Back";

@@ -126,7 +126,7 @@ instance_create(x, y, obj_explosion);
           <argument>
             <kind>1</kind>
             <string>///Kill self, spawn explosion
-if (!instance_place(other.x, other.y + 10, obj_wall)) scr_achievement_airshot();
+if (!instance_place(other.x, other.y + 30, obj_wall)) scr_achievement_airshot();
 instance_destroy();
 instance_create(x, y, obj_explosion);
 </string>
