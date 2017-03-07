@@ -63,7 +63,8 @@ switch (chute)
     case 0: if (vsp &lt; 10) vsp += grav * global.smod;
     break;
     
-    case 1: if (vsp &lt; 0.5) vsp += grav_chute * global.smod;
+    case 1: if (vsp &gt; 2) vsp -= grav * global.smod;
+    vsp = max(vsp, 2);
     break;
 }
 
