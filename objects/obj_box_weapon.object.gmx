@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>///Initialize variables for movement
 grav = 0.4;
+grav_chute = 0.05;
+chute = 0;
+counter = 0;
 vsp = 0;
 </string>
           </argument>
@@ -50,8 +53,19 @@ vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Fall and collide
-if (vsp &lt; 10) vsp += grav * global.smod;
+            <string>///State machine, falling, collision, and counter
+counter++;
+counter = min(15, counter);
+if (counter == 15) chute = 1;
+
+switch (chute)
+{
+    case 0: if (vsp &lt; 10) vsp += grav * global.smod;
+    break;
+    
+    case 1: if (vsp &lt; 3) vsp += grav_chute * global.smod;
+    break;
+}
 
 if (place_meeting(x, y + vsp, obj_wall))
 {
