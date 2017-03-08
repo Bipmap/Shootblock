@@ -393,6 +393,10 @@
       <object>objects\obj_achievement_spray</object>
       <object>objects\obj_achievement_wave</object>
     </objects>
+    <objects name="Tutorial">
+      <object>objects\obj_door_tutorial</object>
+      <object>objects\obj_door_tutorial_text</object>
+    </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_player</object>
     <object>objects\obj_platform</object>
@@ -449,6 +453,7 @@
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level3</room>
     <room>rooms\rm_range</room>
+    <room>rooms\rm_tutorial</room>
     <room>rooms\rm_debugrange</room>
     <room>rooms\rm_debug_intro</room>
     <rooms name="Old">

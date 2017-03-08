@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize variables
-menu[0] = "Normal";
-menu[1] = "Easy";
-menu[2] = "Back";
+menu[0] = "Tutorial"
+menu[1] = "Beginner";
+menu[2] = "Advanced";
+menu[3] = "Back";
 
 mpos = 0;
 xspacing = 32;
@@ -103,7 +104,7 @@ switch (mpos)
     case 0:
     {
         scr_difficulty_text();
-        menu[0] = "&gt;Advanced";
+        menu[0] = "&gt;Tutorial";
         for (m = 0; m &lt; array_length_1d(menu); m++)
         {
             draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
@@ -131,7 +132,18 @@ switch (mpos)
     case 2:
     {
         scr_difficulty_text();
-        menu[2] = "&gt;Back";
+        menu[2] = "&gt;Advanced";
+        for (m = 0; m &lt; array_length_1d(menu); m++)
+        {
+            draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
+        }
+    }
+    break;
+    
+    case 3:
+    {
+        scr_difficulty_text();
+        menu[3] = "&gt;Back";
         for (m = 0; m &lt; array_length_1d(menu); m++)
         {
             draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
