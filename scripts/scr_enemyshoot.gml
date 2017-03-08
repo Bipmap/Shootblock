@@ -10,5 +10,18 @@ with (bullet)
     x += xbuff;
     y += ybuff;
 }
+
+shell = instance_create(x, y, obj_shell_enemy);
+if ((direction > 90) && (direction < 270))
+{
+    shell.hsp = lengthdir_x(random_range(5, 10), direction - 120);
+    shell.vsp = lengthdir_y(random_range(5, 10), direction - 120);
+}
+else
+{
+    shell.hsp = lengthdir_x(random_range(5, 10), direction + 120);
+    shell.vsp = lengthdir_y(random_range(5, 10), direction + 120);
+}
+
 effect_create_above(ef_smokeup, gun.x + lengthdir_x(10, direction), gun.y, 0.3, c_white);
 state = e_states.chase;

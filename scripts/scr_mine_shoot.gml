@@ -16,7 +16,7 @@ if ((ammocount > 0) && (canshoot == true))
     obj_player.recoil_x = lengthdir_x(-2,direction);
     obj_player.recoil_y = lengthdir_y(-1,direction);
     ammocount -= 1;
-    obj_camera.shake = 2;
+    obj_camera.shake += 2;
     canshoot = false;
     alarm[0] = 10;
     //effect_create_above(ef_smokeup, x + lengthdir_x(20, direction), y + lengthdir_y(40, direction), 0.9, c_white);
