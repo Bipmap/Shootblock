@@ -79,11 +79,15 @@
       <sprite>sprites\spr_launcher</sprite>
       <sprite>sprites\spr_rivetgun</sprite>
       <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_bullet_shell</sprite>
       <sprite>sprites\spr_zooka_bullet</sprite>
       <sprite>sprites\spr_explosion</sprite>
       <sprite>sprites\spr_shotgun_bullet</sprite>
       <sprite>sprites\spr_smg_bullet</sprite>
+      <sprite>sprites\spr_smg_shell</sprite>
       <sprite>sprites\spr_revolver_bullet</sprite>
+      <sprite>sprites\spr_shotgun_shell</sprite>
+      <sprite>sprites\spr_revolver_shell</sprite>
       <sprite>sprites\spr_landmine</sprite>
       <sprite>sprites\spr_nade</sprite>
       <sprite>sprites\spr_rivetgun_bullet</sprite>
@@ -109,6 +113,7 @@
       <sprite>sprites\spr_enemy_inactive</sprite>
       <sprite>sprites\spr_target</sprite>
       <sprite>sprites\spr_bullet_enemy</sprite>
+      <sprite>sprites\spr_bullet_shell_enemy</sprite>
       <sprite>sprites\spr_gun_enemy</sprite>
       <sprite>sprites\spr_aim</sprite>
       <sprite>sprites\spr_enemy_side</sprite>
@@ -301,14 +306,18 @@
       <object>objects\obj_launcher</object>
       <object>objects\obj_rivetgun</object>
       <object>objects\obj_bullet</object>
+      <object>objects\obj_shell_bullet</object>
       <object>objects\obj_rocket</object>
       <object>objects\obj_explosion</object>
       <object>objects\obj_explosion_mine</object>
       <object>objects\obj_explosion_small</object>
       <object>objects\obj_explosion_rivet</object>
       <object>objects\obj_bullet_shotgun</object>
+      <object>objects\obj_shell_shotgun</object>
       <object>objects\obj_bullet_smg</object>
+      <object>objects\obj_shell_smg</object>
       <object>objects\obj_bullet_revolver</object>
+      <object>objects\obj_shell_revolver</object>
       <object>objects\obj_mine</object>
       <object>objects\obj_bullet_launcher</object>
       <object>objects\obj_shrapnel</object>
@@ -348,6 +357,7 @@
       <object>objects\obj_target</object>
       <object>objects\obj_gun_enemy</object>
       <object>objects\obj_bullet_enemy</object>
+      <object>objects\obj_shell_enemy</object>
       <object>objects\obj_aim</object>
       <object>objects\obj_enemy_side</object>
       <object>objects\obj_tracker</object>
