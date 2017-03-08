@@ -157,6 +157,8 @@
     <sprite>sprites\spr_wall_player</sprite>
     <sprite>sprites\spr_platform</sprite>
     <sprite>sprites\spr_fall</sprite>
+    <sprite>sprites\spr_fall_tutorial</sprite>
+    <sprite>sprites\spr_tutorial_text</sprite>
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_parachute</sprite>
     <sprites name="Old">
@@ -406,6 +408,8 @@
     <objects name="Tutorial">
       <object>objects\obj_door_tutorial</object>
       <object>objects\obj_door_tutorial_text</object>
+      <object>objects\obj_fall_tutorial</object>
+      <object>objects\obj_tutorial_text</object>
     </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_player</object>
