@@ -12,6 +12,19 @@ if ((ammocount > 0) && (canshoot == true))
         x += xbuff;
         y += ybuff;
     }
+    
+    shell = instance_create(x, y, obj_shell_smg);
+    if ((direction > 90) && (direction < 270))
+    {
+        shell.hsp = lengthdir_x(random_range(5, 10), direction - 150);
+        shell.vsp = lengthdir_y(random_range(5, 10), direction - 150);
+    }
+    else
+    {
+        shell.hsp = lengthdir_x(random_range(5, 10), direction + 150);
+        shell.vsp = lengthdir_y(random_range(5, 10), direction + 150);
+    }
+    
     obj_player.recoil_x = lengthdir_x(-3,direction);
     obj_player.recoil_y = lengthdir_y(-3,direction);
     ammocount -= 1;

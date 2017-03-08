@@ -22,5 +22,6 @@ if ((ammocount > 0) && (canshoot == true))
     obj_camera.shake = 19;
     canshoot = false;
     alarm[0] = 25;
+    alarm[1] = 20;
     effect_create_above(ef_smokeup, x + lengthdir_x(20, direction), y + lengthdir_y(40, direction), 0.9, c_white);
 }
