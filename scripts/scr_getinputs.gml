@@ -11,10 +11,13 @@ mouse_left_r = mouse_check_button_released(mb_left);
 mouse_right_p = mouse_check_button(mb_right);
 key_unlock = keyboard_check_pressed(vk_escape);
 key_m = keyboard_check_pressed(ord('M'));
-key_shift = keyboard_check_pressed(vk_shift);
 key_tab = keyboard_check_pressed(vk_tab);
 key_enter = keyboard_check_pressed(vk_enter);
 key_space = keyboard_check_pressed(vk_space);
+
+key_shift = keyboard_check_pressed(vk_shift);
+key_up = -keyboard_check(ord('W'));
+key_down = keyboard_check(ord('S'));
 
 key_menu_up = max(keyboard_check_pressed(ord('W')), keyboard_check_pressed(vk_up));
 key_menu_down = max(keyboard_check_pressed(ord('S')), keyboard_check_pressed(vk_down));

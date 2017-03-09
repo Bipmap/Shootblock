@@ -35,6 +35,12 @@ recoil_x = 0;
 recoil_y = 0;
 global.smod = 1;
 state = p_states.normal;
+shift = 0;
+shiftable = 1;
+shifting = 0;
+//shifdir_x = 0;
+//shifdir_y = 0;
+//shifdir_t = 0;
 
 jumpable = 0;
 //slide = 0;

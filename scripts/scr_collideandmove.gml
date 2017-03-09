@@ -2,6 +2,7 @@ scr_getinputs();
 
 //Respond to inputs
 move = key_left + key_right;
+move_v = key_up + key_down;
 hsp += move * movespeed;
 hsp = clamp(hsp, -6, 6);
 if (move == 0) hsp *= 0.8;
@@ -9,13 +10,61 @@ if (hsp > 0 && move < 0) hsp = 0;
 if (hsp < 0 && move > 0) hsp = 0;
 if (vsp < 10) vsp += grav * global.smod;
 
-//slide--;
-//slide = max(0, slide);
+/*
+if (move) shifdir_x = 0;
+else if (!move) shifdir_x = 180;
+else shifdir_x = 0;
+if (move_v) shifdir_y = 90;
+else if (!move_v) shifdir_y = 270;
+else shifdir_y = 0;
+
+shifdir_t = shifdir_x - shifdir_y;
+
+if (!shifting && key_shift) shifting = 1;
+
+if (!shifting)
+{
+    shift++;
+    shift = min(30, shift);
+}
+else if (shifting)
+{
+    shift--;
+    hsp += lengthdir_x(shift*0.2, shifdir_t);
+    vsp += lengthdir_y(shift*0.2, shifdir_t);
+    if (shift == 0) shifting = 0;
+}
+*/
 
 if (place_meeting(x, y + 1, obj_wall))
 {
     vsp = 0;
     jumpable = 1;
+    shiftable = 1;
+    //shifting = 0;
+}
+
+if (!place_meeting(x, y + 1, obj_wall))
+{
+    if (shiftable && key_shift)
+    {
+        shiftable = 0;
+        shifting = 1;
+    }
+}
+
+if (shiftable && !shifting)
+{
+    shift++;
+    shift = min(30, shift);
+}
+
+if (shifting)
+{
+    shift--;
+    if (shift == 0) shifting = 0;
+    hsp += (shift*0.2) * move;
+    vsp += (shift*0.02) * move_v;
 }
 
 if(jumpable && key_jump)
