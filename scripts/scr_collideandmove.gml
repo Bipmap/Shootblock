@@ -64,7 +64,8 @@ if (shifting)
     shift--;
     if (shift == 0) shifting = 0;
     hsp += (shift*0.2) * move;
-    vsp += (shift*0.02) * move_v;
+    vsp += (shift*0.016) * move_v;
+    //vsp *= 0.89;
 }
 
 if(jumpable && key_jump)
