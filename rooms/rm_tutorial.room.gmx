@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>global.doorpos = 0;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -70,11 +70,24 @@
     <instance objName="obj_wall" x="3072" y="608" name="inst_4970804B" locked="0" code="" scaleX="20" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2592" y="976" name="inst_90AF2F4E" locked="0" code="" scaleX="10" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2304" y="512" name="inst_30A71BE3" locked="0" code="" scaleX="2" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="2640" y="621" name="inst_28AC43A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fall_tutorial" x="2304" y="912" name="inst_38FB81E6" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial_text" x="384" y="624" name="inst_2E3D4223" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorial_text" x="608" y="608" name="inst_83454A57" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorial_text" x="624" y="576" name="inst_83454A57" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial_text" x="2016" y="608" name="inst_5A801E69" locked="0" code="" scaleX="10" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_tutorial" x="2640" y="621" name="inst_53591894" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="3712" y="976" name="inst_5EE8CE41" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="3712" y="32" name="inst_283B6BA0" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="4352" y="624" name="inst_9E390FAC" locked="0" code="" scaleX="20" scaleY="40" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_tutorial" x="3952" y="621" name="inst_86000EA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorial_text" x="3488" y="608" name="inst_6CAA1D6F" locked="0" code="" scaleX="6" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorial_text" x="3744" y="608" name="inst_B924B835" locked="0" code="" scaleX="6" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box_tutorial_pistol" x="3744" y="544" name="inst_7F3BB2F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform" x="3952" y="560" name="inst_BFD98E74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform" x="3952" y="480" name="inst_8189EAF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform" x="3872" y="528" name="inst_7F89FE5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_target_tutorial" x="3872" y="464" name="inst_A4C5151B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_target_tutorial" x="3952" y="416" name="inst_1C83D81A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_target_tutorial" x="3952" y="512" name="inst_FC050E68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (obj_door_tutorial.doorpos)
+            <string>switch (global.doorpos)
 {
     case 1:
     obj_player.x = 1952;

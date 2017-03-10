@@ -123,6 +123,7 @@
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_door_tutorial</sprite>
       <sprite>sprites\spr_menu_hat</sprite>
       <sprite>sprites\spr_menu_hat_selected</sprite>
       <sprite>sprites\spr_menu_hat_chosen</sprite>
@@ -410,6 +411,8 @@
       <object>objects\obj_door_tutorial_text</object>
       <object>objects\obj_fall_tutorial</object>
       <object>objects\obj_tutorial_text</object>
+      <object>objects\obj_box_tutorial_pistol</object>
+      <object>objects\obj_target_tutorial</object>
     </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_player</object>
