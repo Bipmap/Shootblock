@@ -63,6 +63,7 @@ else if (counter == room_speed)
     global.time -= 1;
 }
 
+global.aim_mod = max(1, 6/global.wave);
 
 /*if (global.time &lt; 0)
 {
