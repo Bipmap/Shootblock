@@ -74,6 +74,26 @@ if (global.muted == 0)
         }
         break;
         
+        case rm_difficulty:
+        {
+            if (!audio_is_playing(snd_musicm))
+            {
+                audio_play_sound(snd_musicm, 0, 1);
+                audio_sound_gain(snd_musicm, global.music_gain, 0);
+            }
+        }
+        break;
+        
+        case rm_tutorial:
+        {
+            if (!audio_is_playing(snd_musicm))
+            {
+                audio_play_sound(snd_musicm, 0, 1);
+                audio_sound_gain(snd_musicm, global.music_gain, 0);
+            }
+        }
+        break;
+        
         case rm_levelselect:
         {
             if (!audio_is_playing(snd_musicm))
@@ -163,6 +183,9 @@ else if (global.muted == 1)
         break;
         
         case rm_difficulty: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
+        break;
+        
+        case rm_tutorial: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);
         break;
         
         case rm_levelselect: if (audio_exists(snd_musicm)) audio_stop_sound(snd_musicm);

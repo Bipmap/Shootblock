@@ -58,9 +58,9 @@ switch(room)
 {
     case rm_menu:
     {
-        draw_text(xspacing, yspacing, "Shootblock b6");
+        draw_text(xspacing, yspacing, "Shootblock b7");
         draw_set_font(fnt_ach4);
-        draw_text(xspacing, yspacing + 37, "Online Leaderboards Public Test Build");
+        //draw_text(xspacing, yspacing + 37, "Online Leaderboards Public Test Build");
     }
     
     break;

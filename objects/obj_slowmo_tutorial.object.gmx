@@ -25,9 +25,64 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize variables
-i = 0;
-collision = 0;
+            <string>///Set meter and states
+meter = 320;
+state = m_states.open;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Increment meter
+scr_getinputs();
+
+switch (state)
+{
+    case m_states.open:
+    {
+        if ((mouse_right_p) &amp;&amp; (meter &gt;= 1))
+        {
+            global.smod = 0.5;
+            meter--;
+        }
+        else
+        {
+            global.smod = 1;
+            meter = meter + 4;
+        }
+        if (meter == 0) state = m_states.charging;
+    }
+    break;
+    
+    case m_states.charging:
+    {
+        global.smod = 1;
+        meter = meter + 4;
+        if (meter == 320) state = m_states.open;
+    }
+    break;
+}
+    
+
+meter = max(0, meter);
+meter = min(meter, 320);
 </string>
           </argument>
         </arguments>
@@ -50,14 +105,23 @@ collision = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw text
-draw_set_font(fnt_normal);
-draw_set_halign(fa_center);
+            <string>///Draw meter
+var bar_x = view_xview + view_wview/2 + 60;
+var bar_y = view_yview + view_hview/2 + 240;
+var bar_thickness = 5
+
+if (state = m_states.open) draw_set_color(c_white);
+else draw_set_color(c_red);
+draw_set_halign(fa_right);
 draw_set_valign(fa_middle);
 
-draw_text(x, y - 45 - i/2, "Jump to Continue");
-
-i = min(50, i + 1);
+if (meter &lt; 320)
+{
+draw_line_width(bar_x, bar_y, bar_x - (meter/(8/3)), bar_y, bar_thickness);
+draw_set_alpha(0.5);
+draw_line_width(bar_x, bar_y, bar_x - 120, bar_y, bar_thickness);
+draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>

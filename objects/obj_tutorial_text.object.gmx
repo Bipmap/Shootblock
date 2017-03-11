@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>///Initialize variables
 i = 0;
-collision = 0;
 </string>
           </argument>
         </arguments>
@@ -83,7 +82,7 @@ draw_set_font(fnt_normal);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-if (collision = 1)
+if (collision)
 {
     switch (x)
     {
@@ -99,12 +98,24 @@ if (collision = 1)
         draw_text(x, y - 45 - i/2, "Try jumping in midair");
         break;
         
-        case 3488:
+        case 3504:
         draw_text(x, y - 45 - i/2, "Crates contain#weapons");
         break;
         
         case 3744:
         draw_text(x, y - 45 - i/2, "Left click to fire");
+        break;
+        
+        case 4960:
+        draw_text(x, y - 45 - i/2, "Hold right click#for slow motion");
+        break;
+        
+        case 6184:
+        draw_text(x, y - 45 - i/2, "Consecutive kills#yield combos");
+        break;
+        
+        case 7824:
+        draw_text(x, y - 45 - i/2, "Put it all together!");
         break;
     }
 }

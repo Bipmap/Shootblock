@@ -216,6 +216,7 @@
       <script>scripts\scr_enemyshoot.gml</script>
       <script>scripts\scr_enemyaim.gml</script>
       <script>scripts\scr_enemydeath.gml</script>
+      <script>scripts\scr_enemydeath_tutorial.gml</script>
       <script>scripts\scr_enemydeath_inactive.gml</script>
       <script>scripts\scr_target_death.gml</script>
     </scripts>
@@ -412,7 +413,16 @@
       <object>objects\obj_fall_tutorial</object>
       <object>objects\obj_tutorial_text</object>
       <object>objects\obj_box_tutorial_pistol</object>
+      <object>objects\obj_box_tutorial_smg</object>
+      <object>objects\obj_box_tutorial_revolver</object>
       <object>objects\obj_target_tutorial</object>
+      <object>objects\obj_target_tutorial_moving</object>
+      <object>objects\obj_spawner_tutorial_moving</object>
+      <object>objects\obj_slowmo_tutorial</object>
+      <object>objects\obj_enemy_tutorial</object>
+      <object>objects\obj_spawner_tutorial_enemy</object>
+      <object>objects\obj_smg_box_spawner</object>
+      <object>objects\obj_combo_tutorial</object>
     </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_player</object>

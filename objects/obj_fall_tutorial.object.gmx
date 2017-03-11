@@ -31,6 +31,11 @@
     obj_player.x = 1952;
     obj_player.y = 624;
     break;
+    
+    case 5:
+    obj_player.x = 7712;
+    obj_player.y = 576;
+    break;
 }
 </string>
           </argument>
