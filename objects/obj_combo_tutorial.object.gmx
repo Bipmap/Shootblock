@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,15 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize variables
-menu[0] = "Tutorial"
-menu[1] = "Beginner";
-menu[2] = "Advanced";
-menu[3] = "Back";
-
-mpos = 0;
-xspacing = 32;
-yspacing = 100;
+            <string>global.combo = 0;
+timer = -1;
 </string>
           </argument>
         </arguments>
@@ -56,21 +49,14 @@ yspacing = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Move around the menu
-scr_getinputs();
-var move = 0;
-move -= key_menu_up;
-move += key_menu_down;
-
-if (move != 0)
+            <string>///Run timer loop
+if (timer == 0) || (timer == -0.5)
 {
-    mpos += move;
-    if (mpos &lt; 0) mpos = array_length_1d(menu) - 1;
-    if (mpos &gt; array_length_1d(menu) - 1) mpos = 0;
+        global.combo = 0;
 }
 
-if (key_menu_confirm == 1) scr_difficulty();
-if (key_menu_deny == 1) room_goto(rm_menu);
+timer = timer - (1 * global.smod);
+timer = max(timer, -1);
 </string>
           </argument>
         </arguments>
@@ -93,63 +79,22 @@ if (key_menu_deny == 1) room_goto(rm_menu);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white);
-draw_set_font(fnt_menu3);
-draw_set_halign(fa_left);
-draw_set_valign(fa_center);
+            <string>var bar_x = view_xview + 995;
+var bar_y = view_yview + 480;
+var bar_thickness = 18
 
-var m;
-switch (mpos)
+draw_set_font(fnt_combo);
+draw_set_color(c_white);
+draw_set_halign(fa_right);
+draw_set_valign(fa_middle);
+
+if (global.combo &gt; 0 &amp;&amp; instance_exists(obj_player))
 {
-    case 0:
-    {
-        scr_difficulty_text();
-        menu[0] = "&gt;Tutorial";
-        for (m = 0; m &lt; array_length_1d(menu); m++)
-        {
-            draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
-        }
-    }
-    break;
-    
-    case 1:
-    {
-        scr_difficulty_text();
-        menu[1] = "&gt;Beginner";
-        for (m = 0; m &lt; array_length_1d(menu); m++)
-        {
-            draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
-        }
-        draw_set_color(c_black);
-        draw_set_font(fnt_ach4);
-        draw_set_valign(fa_middle);
-        draw_set_halign(fa_left);
-
-        draw_text(xspacing, room_height/8 + 37, "Highscores disabled");
-    }
-    break;
-    
-    case 2:
-    {
-        scr_difficulty_text();
-        menu[2] = "&gt;Advanced";
-        for (m = 0; m &lt; array_length_1d(menu); m++)
-        {
-            draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
-        }
-    }
-    break;
-    
-    case 3:
-    {
-        scr_difficulty_text();
-        menu[3] = "&gt;Back";
-        for (m = 0; m &lt; array_length_1d(menu); m++)
-        {
-            draw_text(xspacing, 190 +  m * yspacing, string(menu[m]));
-        }
-    }
-    break;
+draw_text(view_xview + 1000, view_yview + 530, "x" + string(global.combo));
+draw_line_width(bar_x, bar_y, bar_x - timer*0.4555, bar_y, bar_thickness);
+draw_set_alpha(0.5);
+draw_line_width(bar_x, bar_y, bar_x - 82, bar_y, bar_thickness);
+draw_set_alpha(1);
 }
 </string>
           </argument>

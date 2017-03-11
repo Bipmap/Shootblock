@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xspacing = 32;
-yspacing = room_height/8;
+            <string>///Initialize variables
+i = 0;
+collision = 0;
 </string>
           </argument>
         </arguments>
@@ -49,56 +50,14 @@ yspacing = room_height/8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_black);
-draw_set_font(fnt_menu2);
+            <string>///Draw text
+draw_set_font(fnt_normal);
+draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_halign(fa_left);
 
-switch(room)
-{
-    case rm_menu:
-    {
-        draw_text(xspacing, yspacing, "Shootblock b7");
-        draw_set_font(fnt_ach4);
-        //draw_text(xspacing, yspacing + 37, "Online Leaderboards Public Test Build");
-    }
-    
-    break;
-    
-    case rm_difficulty: draw_text(xspacing, yspacing, "Select difficulty");
-    break;
-    
-    case rm_levelselect:
-    {
-        draw_text(xspacing, yspacing, "Select Level");
-        draw_set_font(fnt_ach4);
-        draw_text(xspacing, yspacing + 37, "Tab to view highscores");
-    }
-    break;
-    
-    case rm_highscores: draw_text(xspacing, yspacing, "Online Highscores");
-    break;
-    
-    case rm_extras: draw_text(xspacing, yspacing, "Extras");
-    break;
-    
-    case rm_options: draw_text(xspacing, yspacing, "Options");
-    break;
-    
-    case rm_achievements:
-    {
-        draw_text(xspacing, yspacing, "Achievements");
-        draw_set_font(fnt_ach4);
-        draw_text(725, yspacing + 18, "(Esc to return)");
-    }
-    break;
-    
-    case rm_credits: draw_text(xspacing, yspacing, "Credits")
-    break;
-    
-    default: draw_text(xspacing, yspacing, "Null");
-    break;
-}
+draw_text(x, y - 45 - i/2, "Jump to Continue");
+
+i = min(50, i + 1);
 </string>
           </argument>
         </arguments>
