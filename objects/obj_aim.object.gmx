@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Adjust speed
 if (global.easy == 0) image_speed = global.smod;
-else if (global.easy == 1) image_speed = global.smod / (5/3);
+else if (global.easy == 1) image_speed = global.smod / (5/3) / global.aim_mod;
 </string>
           </argument>
         </arguments>
