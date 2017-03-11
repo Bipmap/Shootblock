@@ -195,7 +195,7 @@ draw_text(xspacing, yspacing + 210, string(gmsb_status));
 if (!global.text_entry &amp;&amp; !show_highscores &amp;&amp; !get_highscores)
 {
     draw_set_font(fnt_normal);
-    draw_text(xspacing, yspacing + 150, "Press Enter to submit score.");
+    if (!global.easy) draw_text(xspacing, yspacing + 150, "Press Enter to submit score.");
     draw_text(xspacing, yspacing + 170, "Press Space to view scores.");
 }
     
