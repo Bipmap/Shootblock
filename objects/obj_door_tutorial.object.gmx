@@ -123,10 +123,7 @@ if (place_meeting(x, y, obj_player) &amp;&amp; key_jump &amp;&amp; image_index =
         break;
         
         case 5:
-        instance_create(8672, 576, obj_enemy_tutorial);
-        instance_create(8288, 528, obj_box_tutorial_revolver);
-        obj_player.x = 7712;
-        obj_player.y = 576;
+        room_goto(rm_menu);
         break;
     }
 }

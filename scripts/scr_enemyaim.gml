@@ -8,5 +8,5 @@ if (global.easy == 0)
 else if (global.easy == 1)
 {
     circle = instance_create(gun.x, gun.y, obj_aim);
-    aimtimer = 50;
+    aimtimer = 50 * global.aim_mod;
 }

@@ -209,6 +209,7 @@
       <script>scripts\scr_launcher_split.gml</script>
       <script>scripts\scr_rivetgun_initialize.gml</script>
       <script>scripts\scr_rivetgun_shoot.gml</script>
+      <script>scripts\scr_collide_shell.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_enemycollideandmove.gml</script>

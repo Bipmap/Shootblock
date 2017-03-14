@@ -102,7 +102,8 @@
     <instance objName="obj_platform" x="6224" y="608" name="inst_1B60FF61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform" x="6256" y="608" name="inst_EBB0DFE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial_text" x="6184" y="609" name="inst_17B1A79C" locked="0" code="" scaleX="12.5" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="6832" y="541" name="inst_F9A36C88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pause" x="368" y="592" name="inst_117C97B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_tutorial" x="6832" y="541" name="inst_E23EAA8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
