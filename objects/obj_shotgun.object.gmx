@@ -29,6 +29,35 @@
 ammocount = 6;
 canshoot = true;
 reloading = false;
+image_speed = 0;
+image_index = 0;
+pumping = 0;
+dir = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Start pumping
+pumping = 1;
+dir = 1;
 </string>
           </argument>
         </arguments>
@@ -86,6 +115,9 @@ else
             <kind>1</kind>
             <string>///Allow refire
 canshoot = true;
+pumping = 0;
+image_speed = 0;
+image_index = 0;
 </string>
           </argument>
         </arguments>
@@ -156,6 +188,12 @@ if (mouse_left) scr_shotgun_shoot();
 
 //Delete empty gun
 if (ammocount == 0) scr_pistol_initialize(); 
+
+if (pumping)
+{
+    image_speed = 1/2 * dir;
+    if (image_index == 4) dir = -1;
+}
 </string>
           </argument>
         </arguments>

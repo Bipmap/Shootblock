@@ -29,6 +29,8 @@
 ammocount = 30;
 canshoot = true;
 reloading = false;
+image_index = 0;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -119,7 +121,12 @@ y += ybuff;
 
 //Fire gun
 scr_getinputs();
-if (mouse_left_p) scr_smg_shoot();
+if (mouse_left_p)
+{
+    scr_smg_shoot();
+    image_index = 1;
+}
+else image_index = 0;
 
 //Delete empty gun
 if (ammocount == 0) scr_pistol_initialize(); 

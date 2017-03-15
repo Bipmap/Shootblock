@@ -23,5 +23,6 @@ if ((ammocount > 0) && (canshoot == true))
     canshoot = false;
     alarm[0] = 25;
     alarm[1] = 20;
+    alarm[2] = 10;
     effect_create_above(ef_smokeup, x + lengthdir_x(20, direction), y + lengthdir_y(40, direction), 0.9, c_white);
 }
