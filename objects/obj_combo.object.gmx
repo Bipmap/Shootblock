@@ -179,11 +179,19 @@ draw_set_valign(fa_middle);
 
 if (global.combo &gt; 0 &amp;&amp; instance_exists(obj_player))
 {
-draw_text(view_xview + 1000, view_yview + 530, "x" + string(global.combo));
-draw_line_width(bar_x, bar_y, bar_x - timer*0.4555, bar_y, bar_thickness);
-draw_set_alpha(0.5);
-draw_line_width(bar_x, bar_y, bar_x - 82, bar_y, bar_thickness);
-draw_set_alpha(1);
+    draw_text_transformed(view_xview + 1000, view_yview + 530, "x" + string(global.combo),
+    min(2, 1 + global.combo/10), min(2, 1 + global.combo/10), 0);
+    draw_line_width(bar_x, bar_y, bar_x - timer*0.4555, bar_y, bar_thickness);
+    draw_set_alpha(0.5);
+    draw_line_width(bar_x, bar_y, bar_x - 82, bar_y, bar_thickness);
+    draw_set_alpha(1);
+    
+    /*draw_set_alpha(global.combo/10);
+    draw_rectangle_colour(view_xview, view_yview, view_xview + view_wview, view_yview + view_hview,
+    c_red, c_red, c_red, c_red, 0);
+    draw_set_alpha(1);
+    
+    obj_camera.shake += global.combo;*/
 }
 </string>
           </argument>
