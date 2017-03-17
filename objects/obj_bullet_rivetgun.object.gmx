@@ -137,7 +137,7 @@ i++;
           <argument>
             <kind>1</kind>
             <string>///Kill when outside room
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>

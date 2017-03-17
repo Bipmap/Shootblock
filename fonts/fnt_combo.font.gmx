@@ -13,24 +13,26 @@
     <texgroup0>0</texgroup0>
   </texgroups>
   <ranges>
+    <range0>37,37</range0>
     <range0>46,46</range0>
     <range0>48,57</range0>
     <range0>120,120</range0>
   </ranges>
   <glyphs>
-    <glyph character="32" x="190" y="77" w="21" h="90" shift="21" offset="0"/>
-    <glyph character="46" x="213" y="77" w="14" h="72" shift="22" offset="4"/>
-    <glyph character="48" x="2" y="77" w="38" h="73" shift="43" offset="3"/>
-    <glyph character="49" x="161" y="77" w="27" h="72" shift="43" offset="5"/>
-    <glyph character="50" x="88" y="2" w="39" h="72" shift="43" offset="2"/>
-    <glyph character="51" x="169" y="2" w="38" h="73" shift="43" offset="3"/>
-    <glyph character="52" x="46" y="2" w="40" h="72" shift="43" offset="2"/>
-    <glyph character="53" x="42" y="77" w="38" h="73" shift="43" offset="2"/>
-    <glyph character="54" x="209" y="2" w="38" h="73" shift="43" offset="3"/>
-    <glyph character="55" x="122" y="77" w="37" h="72" shift="43" offset="3"/>
-    <glyph character="56" x="82" y="77" w="38" h="73" shift="43" offset="3"/>
-    <glyph character="57" x="129" y="2" w="38" h="73" shift="43" offset="2"/>
-    <glyph character="120" x="2" y="2" w="42" h="72" shift="43" offset="1"/>
+    <glyph character="32" x="31" y="154" w="21" h="90" shift="21" offset="0"/>
+    <glyph character="37" x="2" y="2" w="58" h="75" shift="64" offset="3"/>
+    <glyph character="46" x="54" y="154" w="14" h="72" shift="22" offset="4"/>
+    <glyph character="48" x="82" y="79" w="38" h="73" shift="43" offset="3"/>
+    <glyph character="49" x="2" y="154" w="27" h="72" shift="43" offset="5"/>
+    <glyph character="50" x="148" y="2" w="39" h="72" shift="43" offset="2"/>
+    <glyph character="51" x="189" y="2" w="38" h="73" shift="43" offset="3"/>
+    <glyph character="52" x="106" y="2" w="40" h="72" shift="43" offset="2"/>
+    <glyph character="53" x="122" y="79" w="38" h="73" shift="43" offset="2"/>
+    <glyph character="54" x="42" y="79" w="38" h="73" shift="43" offset="3"/>
+    <glyph character="55" x="202" y="79" w="37" h="72" shift="43" offset="3"/>
+    <glyph character="56" x="162" y="79" w="38" h="73" shift="43" offset="3"/>
+    <glyph character="57" x="2" y="79" w="38" h="73" shift="43" offset="2"/>
+    <glyph character="120" x="62" y="2" w="42" h="72" shift="43" offset="1"/>
   </glyphs>
   <kerningPairs/>
   <image>fnt_combo.png</image>

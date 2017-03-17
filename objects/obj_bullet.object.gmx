@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Kill self
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///Kill self
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>
@@ -74,7 +74,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///Kill when outside room
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>

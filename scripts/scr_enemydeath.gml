@@ -6,6 +6,8 @@ with(gun) instance_destroy();
 if instance_exists(circle) with(circle) instance_destroy();
 global.score += 5;
 global.combo += 1;
+global.hit += 1;
+global.total += 1;
 //obj_combo.alarm[0] = room_speed * 3;
 obj_combo.timer = room_speed * 3;
 

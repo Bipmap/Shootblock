@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Kill self, spawn explosion
-instance_destroy();
+scr_miss();
 instance_create(x, y, obj_explosion);
 </string>
           </argument>
@@ -51,7 +51,7 @@ instance_create(x, y, obj_explosion);
           <argument>
             <kind>1</kind>
             <string>///Kill self, spawn explosion
-instance_destroy();
+scr_miss();
 instance_create(x, y, obj_explosion);
 </string>
           </argument>
@@ -152,7 +152,7 @@ instance_create(x, y, obj_explosion);
           <argument>
             <kind>1</kind>
             <string>///Kill when outside room
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>

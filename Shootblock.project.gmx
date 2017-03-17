@@ -210,6 +210,7 @@
       <script>scripts\scr_rivetgun_initialize.gml</script>
       <script>scripts\scr_rivetgun_shoot.gml</script>
       <script>scripts\scr_collide_shell.gml</script>
+      <script>scripts\scr_miss.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_enemycollideandmove.gml</script>
@@ -291,6 +292,7 @@
     <font>fonts\fnt_menu3</font>
     <font>fonts\fnt_highscores</font>
     <font>fonts\fnt_combo</font>
+    <font>fonts\fnt_accuracy</font>
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_ach1</font>
     <font>fonts\fnt_ach2</font>
