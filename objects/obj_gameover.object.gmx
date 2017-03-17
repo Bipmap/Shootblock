@@ -136,8 +136,8 @@ draw_set_color(c_white);
 draw_set_halign(fa_right);
 draw_set_valign(fa_middle);
 draw_text(view_xview + 1000, view_yview + 400, "Accuracy:");
-draw_set_font(fnt_combo);
-draw_text(view_xview + 1000, view_yview + 440, "%" + string(accuracy));
+draw_set_font(fnt_accuracy);
+draw_text(view_xview + 1000, view_yview + 435, "%" + string(accuracy));
 
 /*
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 55, "Enter to upload score");
