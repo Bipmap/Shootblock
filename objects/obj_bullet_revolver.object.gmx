@@ -68,7 +68,7 @@ collisions = 0;
 }
 if (bounces = 0)
 {
-    instance_destroy();
+    scr_miss();
 }
 </string>
           </argument>
@@ -141,7 +141,7 @@ scr_achievement_collateral();
           <argument>
             <kind>1</kind>
             <string>///Kill when outside room
-instance_destroy();
+scr_miss();
 </string>
           </argument>
         </arguments>

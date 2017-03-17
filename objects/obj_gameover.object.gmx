@@ -30,7 +30,14 @@ gmsb_status = "";
 for(i = 0;i &lt; 6; i++) gmsb_topscores[i] = 0;
 for(i = 0;i &lt; 6; i++) gmsb_topnames[i] = 0;
 tagid = "58b5d9262f0b114883126142176"
-highscores = 0;
+highscores = 0;*/
+
+///Initialize accuracy
+if (global.total != 0)
+{
+    accuracy = (global.hit / global.total) * 100;
+}
+else accuracy = "Null";
 </string>
           </argument>
         </arguments>
@@ -122,6 +129,15 @@ draw_set_valign(fa_middle);
 draw_text(view_xview + 1000, view_yview + 480, "Top combo:");
 draw_set_font(fnt_combo);
 draw_text(view_xview + 1000, view_yview + 530, string(obj_combo.topcombo));
+
+//Draw accuracy
+draw_set_font(fnt_normal);
+draw_set_color(c_white);
+draw_set_halign(fa_right);
+draw_set_valign(fa_middle);
+draw_text(view_xview + 1000, view_yview + 400, "Accuracy:");
+draw_set_font(fnt_combo);
+draw_text(view_xview + 1000, view_yview + 440, "%" + string(accuracy));
 
 /*
 draw_text(view_xview + view_wview/2, view_yview + view_hview/2 + 55, "Enter to upload score");

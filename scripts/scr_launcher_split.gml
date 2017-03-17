@@ -1,4 +1,4 @@
-instance_destroy();
+scr_miss();
 var i;
 for (i = 0; i < 8; i += 1;)
 {

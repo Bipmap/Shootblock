@@ -13,6 +13,8 @@
   <code>global.cursor_hsp = 0;
 global.cursor_vsp = 0;
 global.last = -1;
+global.hit = 0;
+global.total = 0;
 
 audio_stop_all();</code>
   <enableViews>-1</enableViews>
